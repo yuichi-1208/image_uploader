@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Image:</strong>
+  <!-- image_tag は画像のパスを引数にして画像を表示させるメソッドです。 -->
+  <%= image_tag @feed.image.thumb.url %>
+</p>
+
+<%= link_to 'Edit', edit_feed_path(@feed) %> |
+<%= link_to 'Back', feeds_path %>
